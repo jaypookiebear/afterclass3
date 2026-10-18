@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFTERCLASS — Hyderabad Student Scene</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f3f0ed,#121414);--panel:light-dark(#fff,#1a1c1c);--panel2:light-dark(#e5e1df,#282a2b);--ink:light-dark(#171717,#fff);--muted:light-dark(#555,#c3c7c8);--line:light-dark(#bdb6b3,#3c4142);--red:#800020;--red2:#ffb3b5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Space Grotesk",Arial,sans-serif}#app{min-height:100vh;background-color:var(--bg)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a,.event-card{transition:all .18s ease}button{cursor:pointer}.wrap{max-width:1440px;margin:auto;padding-inline:clamp(20px,4vw,56px)}.display,h1,h2,h3,.brand{font-family:"Bebas Neue","Arial Narrow",Impact,sans-serif;text-transform:uppercase;letter-spacing:.035em;font-weight:400;margin:0}.eyebrow,.label{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.muted{color:var(--muted)}header{position:sticky;top:0;z-index:10;background:light-dark(#f3f0edee,#121414ee);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:29px;line-height:.85}.brand small{display:block;font:700 10px "Space Grotesk",Arial,sans-serif;letter-spacing:.2em;margin-top:8px;color:var(--muted)}nav{display:flex;gap:24px;align-items:center}nav a{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}nav a:hover{color:var(--ink)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--ink);padding:14px 19px;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.btn:hover{background:#fff;color:var(--red);box-shadow:4px 4px 0 var(--line);transform:translate(-1px,-1px)}.btn.ghost{background:var(--panel2);color:var(--ink);border-color:var(--line)}.btn.ghost:hover{border-color:var(--ink)}.ticker{background:var(--red);color:white;overflow:hidden;padding:11px 0;font-size:12px;font-weight:600;letter-spacing:.06em;white-space:nowrap}.ticker span{padding-right:32px}.hero{padding-block:76px 62px;display:grid;grid-template-columns:1.5fr .8fr;gap:54px;align-items:center}.tag{display:inline-block;background:var(--panel2);border-left:4px solid var(--red);padding:9px 12px;margin-bottom:24px}.tag .eyebrow{letter-spacing:.09em}.hero h1{font-size:clamp(78px,12vw,164px);line-height:.78;letter-spacing:.02em}.hero h1 span{display:block;color:var(--red2);color:light-dark(var(--red),var(--red2));font-size:clamp(35px,5.4vw,72px);line-height:1.15;margin-top:15px}.intro{max-width:690px;font-size:17px;line-height:1.75;color:var(--muted);margin:26px 0}.intro strong{color:var(--ink)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 34px}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);padding-top:18px;gap:10px}.stat{background:var(--panel);padding:13px}.stat strong{display:block;font:36px "Bebas Neue",Impact,sans-serif}.stat span{font-size:10px;letter-spacing:.09em;font-weight:700;color:var(--muted)}.poster{border:1px solid var(--line);padding:9px;background:var(--panel);box-shadow:7px 7px 0 var(--red)}.poster-art{min-height:365px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#272a2a 0%,#171818 46%,#510018 100%);position:relative;overflow:hidden;color:white}.poster-art:before{content:"";position:absolute;width:290px;height:290px;border:1px solid #ffffff55;border-radius:50%;right:-75px;top:35px;box-shadow:0 0 0 24px #ffffff0b,0 0 0 48px #ffffff08}.poster-art:after{content:"AC";position:absolute;right:8px;top:60px;font:170px "Bebas Neue",Impact,sans-serif;color:#ffffff0b;line-height:1}.poster-art>*{position:relative;z-index:1}.poster-bottom{background:var(--panel2);padding:17px;display:flex;justify-content:space-between;align-items:center;gap:12px}.poster-bottom strong{font:22px "Bebas Neue",Impact,sans-serif;display:block}.qr{width:58px;height:58px;flex-shrink:0;background:repeating-conic-gradient(#fff 0 25%,#151515 0 50%) 0/10px 10px;border:5px solid white}.campus{border-block:1px solid var(--line);padding-block:23px}.campus-head{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:15px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:var(--panel2);border:1px solid var(--line);padding:8px 11px;font-size:11px;letter-spacing:.04em}.section{padding-block:82px}.section.alt{background:var(--panel)}.section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:34px}.section-head h2{font-size:clamp(42px,6vw,70px);line-height:.95}.section-head p{max-width:520px;color:var(--muted);line-height:1.7;margin:0}.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pillar{background:var(--panel2);padding:25px;border:1px solid var(--line);box-shadow:4px 4px 0 var(--red);min-height:250px}.symbol{width:44px;height:44px;display:grid;place-items:center;background:var(--red);color:#fff;font-size:23px;margin-bottom:22px}.pillar h3{font-size:30px;line-height:1;margin:8px 0 12px}.pillar p{color:var(--muted);font-size:14px;line-height:1.7}.events-tools{display:flex;gap:8px;flex-wrap:wrap}.filter{background:var(--panel2);border:1px solid var(--line);padding:9px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink)}.filter.active,.filter:hover{background:var(--red);color:#fff;border-color:var(--red)}.events{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.event-card{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column}.event-card:hover{border-color:var(--ink);box-shadow:5px 5px 0 var(--red);transform:translate(-2px,-2px)}.event-cover{height:145px;padding:16px;background:linear-gradient(135deg,#272a2a,#111 70%,#63001e);color:white;display:flex;justify-content:space-between;align-items:flex-start}.event-cover .big{font:64px/.8 "Bebas Neue",Impact,sans-serif;opacity:.88}.event-body{padding:20px;display:flex;flex-direction:column;flex:1}.event-meta{font-size:11px;color:var(--muted);letter-spacing:.07em;font-weight:700}.event-body h3{font-size:32px;line-height:.98;margin:12px 0}.event-body p{font-size:13px;line-height:1.65;color:var(--muted);margin:0 0 22px}.event-foot{border-top:1px solid var(--line);padding-top:14px;margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}.event-foot .btn{padding:10px 12px;font-size:10px}.badge{background:var(--red);color:#fff;padding:6px 8px;font-size:10px;font-weight:700;letter-spacing:.1em}.empty{display:none;padding:30px;border:1px dashed var(--line);color:var(--muted)}.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.join-grid h2{font-size:clamp(45px,6vw,72px);line-height:.9}.join-grid p{line-height:1.8;color:var(--muted)}form{background:var(--panel2);border:1px solid var(--line);padding:25px;display:grid;gap:16px}.field{display:grid;gap:7px}.field label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.field input,.field select,.field textarea{width:100%;padding:12px;background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:0}.field input:focus,.field select:focus,.field textarea:focus{outline:1px solid var(--red);border-color:var(--red)}.form-note{font-size:12px;color:var(--muted);line-height:1.6}.success{display:none;padding:14px;border:1px solid var(--red);color:var(--ink);background:var(--panel)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.menu-toggle{display:none;background:none;color:var(--ink);border:1px solid var(--line);padding:8px 10px}
+@media(max-width:900px){nav{gap:12px}.hero{grid-template-columns:1fr;gap:35px;padding-top:56px}.poster{max-width:540px}.poster-art{min-height:280px}.pillars,.events{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.join-grid{gap:28px}}
+@media(max-width:640px){.nav{height:68px}.menu-toggle{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:18px 20px;flex-direction:column;align-items:stretch}nav.open{display:flex}nav a{padding:10px 0}.nav>.btn{display:none}.hero{padding-block:48px 42px}.hero h1{font-size:82px}.hero h1 span{font-size:35px}.intro{font-size:15px}.stats{grid-template-columns:repeat(2,1fr)}.poster-art{min-height:250px}.section{padding-block:58px}.pillars,.events,.join-grid{grid-template-columns:1fr}.section-head h2{font-size:48px}.event-cover{height:120px}.campus-head{display:block}.campus-head .muted{display:block;margin-top:7px}}
+</style>
+</head>
+<body><div id="app">
+<header><div class="wrap nav">
+<a class="brand" href="#top">AFTERCLASS<small>HYD CHAPTER / STUDENT CULTURE</small></a>
+<nav id="nav"><a href="#scene">The Scene</a><a href="#events">Events</a><a href="#collectives">Collectives</a><a href="#join">Join</a></nav>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰ MENU</button>
+<a class="btn" href="#join">Join the scene ↗</a>
+</div></header>
+<div class="ticker"><div class="wrap"><span>■ TRANSMISSION LIVE: HYDERABAD CAMPUS WIRE</span><span>／／ 42+ CAMPUSES</span><span>／／ CREATOR-LED</span><span>／／ SCHOOL ENDS. THE SCENE BEGINS.</span></div></div>
+<main id="top">
+<section class="wrap hero">
+<div>
+<div class="tag"><span class="eyebrow">Hyderabad's independent student network</span></div>
+<h1>AFTERCLASS<span>SCHOOL ENDS.<br>THE SCENE BEGINS.</span></h1>
+<p class="intro">A meeting point for <strong>students, creators, coders, musicians and makers</strong> across Hyderabad. Trade the timetable for late-night ideas, small stages, shared projects and a community built by students.</p>
+<div class="actions"><a class="btn" href="#events">Explore events ↗</a><a class="btn ghost" href="#collectives">Discover collectives ↓</a></div>
+<div class="stats"><div class="stat"><strong>42+</strong><span>CAMPUSES CONNECTED*</span></div><div class="stat"><strong>18</strong><span>LOCAL CHAPTERS*</span></div><div class="stat"><strong>120+</strong><span>SESSIONS HOSTED*</span></div><div class="stat"><strong>100%</strong><span>STUDENT-LED</span></div></div>
+<p class="form-note">*Concept figures from the supplied design concept; replace with verified live metrics before launch.</p>
+</div>
+<aside class="poster">
+<div class="poster-art"><span class="eyebrow">AFTERCLASS ARCHIVE / HYD—001</span><div><div class="eyebrow" style="color:#ffb3b5">FIELD NOTES // 01</div><div class="display" style="font-size:clamp(42px,6vw,70px);line-height:.9;margin-top:12px">MAKE<br>NOISE.<br>MAKE<br>THINGS.</div></div><span class="eyebrow">MUSIC / MAKERS / MOVEMENT</span></div>
+<div class="poster-bottom"><div><span class="eyebrow muted">OPEN ACCESS PASS</span><strong>ALL CHAPTERS / ONE SCENE</strong><span class="muted" style="font-size:11px">TOKEN: AC-HYD-001</span></div><div class="qr" aria-label="Decorative QR-style graphic"></div></div>
+</aside>
+</section>
+<section class="wrap campus"><div class="campus-head"><span class="eyebrow">Networked institutions & university hubs</span><span class="muted" style="font-size:12px">HYDERABAD METROPOLITAN REGION</span></div><div class="chips"><span class="chip">CBIT</span><span class="chip">BITS PILANI HYDERABAD</span><span class="chip">MAHINDRA UNIVERSITY</span><span class="chip">JNTUH</span><span class="chip">VNR VJIET</span><span class="chip">VASAVI COLLEGE</span><span class="chip">OSMANIA UNIVERSITY</span><span class="chip">WOXSEN UNIVERSITY</span></div></section>
+<section class="section alt" id="scene"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:var(--red);margin-bottom:12px">Manifesto / 001</div><h2>WHAT IS<br>THE SCENE?</h2></div><p>By day, roll-calls and routines. After the final hour, we build the projects our syllabi don't leave room for. A place to meet your people, try something new and make work that exists beyond the classroom.</p></div>
+<div class="pillars" id="collectives">
+<article class="pillar"><div class="symbol">♫</div><span class="eyebrow muted">PILLAR 01 / SOUNDSCAPE</span><h3>Independent sound</h3><p>Acoustic sets, beat circles, listening sessions and low-pressure open mics. Bring an instrument, a playlist or just show up.</p><a class="eyebrow" href="#events">Find a session ↗</a></article>
+<article class="pillar"><div class="symbol">⌘</div><span class="eyebrow muted">PILLAR 02 / MAKERSPACE</span><h3>Build after hours</h3><p>Hack nights, creative coding, design jams and tiny prototypes. Collaborate across courses instead of building alone.</p><a class="eyebrow" href="#events">Meet the makers ↗</a></article>
+<article class="pillar"><div class="symbol">✳</div><span class="eyebrow muted">PILLAR 03 / CULTURE</span><h3>Make your own scene</h3><p>Photo walks, zine swaps, film circles and campus pop-ups. Turn the things you love into something other people can join.</p><a class="eyebrow" href="#events">Explore culture ↗</a></article>
+</div></div></section>
+<section class="section" id="events"><div class="wrap"><div class="section-head"><div><div class="eyebrow" style="color:var(--red);margin-bottom:12px">The noticeboard / 002</div><h2>UP NEXT<br>AFTER HOURS.</h2></div><p>Small rooms. Big ideas. Browse the sample programme and register your interest. Dates and venues shown here are illustrative until confirmed by an organiser.</p></div>
+<div class="events-tools" role="group" aria-label="Filter events" style="margin-bottom:22px"><button class="filter active" data-filter="all">All events</button><button class="filter" data-filter="music">Music</button><button class="filter" data-filter="build">Build & tech</button><button class="filter" data-filter="culture">Culture</button></div>
+<div class="events" id="eventList">
+<article class="event-card" data-category="music"><div class="event-cover"><span class="badge">OPEN MIC</span><span class="big">01</span></div><div class="event-body"><span class="event-meta">MUSIC / HYD CHAPTER</span><h3>Rooftop Cypher</h3><p>An easygoing open stage for acoustic sets, spoken word and beat experiments. First-timers welcome.</p><div class="event-foot"><span class="event-meta">DATE TBA · VENUE TBA</span><button class="btn rsvp" data-event="Rooftop Cypher">I'm interested ↗</button></div></div></article>
+<article class="event-card" data-category="build"><div class="event-cover"><span class="badge">MAKER NIGHT</span><span class="big">02</span></div><div class="event-body"><span class="event-meta">BUILD / CREATOR LAB</span><h3>Kinetic Labs</h3><p>A collaborative sprint for small apps, weird prototypes and design ideas. Bring a laptop or a sketchbook.</p><div class="event-foot"><span class="event-meta">DATE TBA · VENUE TBA</span><button class="btn rsvp" data-event="Kinetic Labs">I'm interested ↗</button></div></div></article>
+<article class="event-card" data-category="culture"><div class="event-cover"><span class="badge">COMMUNITY</span><span class="big">03</span></div><div class="event-body"><span class="event-meta">CULTURE / FIELD NOTES</span><h3>City in Frames</h3><p>A student photo walk and mini-zine meetup: explore familiar streets, swap perspectives and make a shared archive.</p><div class="event-foot"><span class="event-meta">DATE TBA · VENUE TBA</span><button class="btn rsvp" data-event="City in Frames">I'm interested ↗</button></div></div></article>
+</div><div class="empty" id="empty">No events in this category yet. Try another filter.</div>
+</div></section>
+<section class="section alt" id="join"><div class="wrap join-grid"><div><div class="eyebrow" style="color:var(--red);margin-bottom:14px">Your move / 003</div><h2>DON'T JUST<br>SCROLL THE SCENE.<br>JOIN IT.</h2><p>Have an idea for a meetup? Want to perform, build something or help run a chapter? Leave your details and choose what you want to get involved in.</p><div class="chips"><span class="chip">NO EXPERIENCE NEEDED</span><span class="chip">STUDENT-LED</span><span class="chip">BRING AN IDEA</span></div></div>
+<form id="joinForm"><div class="eyebrow">Chapter interest form / AC—HYD</div><div class="success" id="success" role="status">Your details are ready in this demo. Connect a form service to receive real submissions.</div>
+<div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="campus">Campus / college</label><input id="campus" name="campus" required placeholder="Where do you study?"></div>
+<div class="field"><label for="interest">What are you into?</label><select id="interest" name="interest" required><option value="">Choose a collective</option><option>Music & performance</option><option>Tech & making</option><option>Art, film & photography</option><option>Organising & community</option><option>I'm open to anything</option></select></div>
+<div class="field"><label for="idea">An idea you want to bring (optional)</label><textarea id="idea" name="idea" rows="3" placeholder="A meetup, a workshop, a project..."></textarea></div>
+<button class="btn" type="submit">Send interest ↗</button><p class="form-note">Demo only: this form does not transmit or store personal information. Add a secure form backend before public launch.</p></form>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span class="brand" style="font-size:23px">AFTERCLASS</span><span>HYDERABAD CHAPTER · SCHOOL ENDS. THE SCENE BEGINS.</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+</div>
+<script>
+<script>
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxe-ICncKQwS4TfKJ2trd3C3fXicMIS12d9-QtBgkSbATC9tQ7Dud0eCYKieHHubkfcsw/exec';
+
+// Mobile menu
+const menu = document.getElementById('menuToggle'), nav = document.getElementById('nav');
+menu.addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+// Event filters
+const filters = [...document.querySelectorAll('.filter')],
+      cards = [...document.querySelectorAll('.event-card')],
+      empty = document.getElementById('empty');
+filters.forEach(button => button.addEventListener('click', () => {
+  filters.forEach(b => b.classList.toggle('active', b === button));
+  let shown = 0;
+  cards.forEach(card => {
+    const match = button.dataset.filter === 'all' || card.dataset.category === button.dataset.filter;
+    card.style.display = match ? 'flex' : 'none';
+    if (match) shown++;
+  });
+  empty.style.display = shown ? 'none' : 'block';
+}));
+
+// "I'm interested" buttons pre-select the interest and jump to the form
+document.querySelectorAll('.rsvp').forEach(button => button.addEventListener('click', () => {
+  document.getElementById('interest').value =
+    button.dataset.event === 'Kinetic Labs' ? 'Tech & making' :
+    button.dataset.event === 'City in Frames' ? 'Art, film & photography' :
+    'Music & performance';
+  document.getElementById('join').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('name').focus({ preventScroll: true });
+}));
+
+// Join form -> Google Sheet
+document.getElementById('joinForm').addEventListener('submit', async e => {
+  e.preventDefault();
+
+  const form = e.target;
+  const submitButton = form.querySelector('button[type="submit"]');
+  const successBox = document.getElementById('success');
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Sending...';
+
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    campus: document.getElementById('campus').value,
+    interest: document.getElementById('interest').value,
+    idea: document.getElementById('idea').value
+  };
+
+  try {
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: JSON.stringify(formData)
+    });
+
+    successBox.textContent = "You're on the list! Welcome to the scene.";
+    successBox.style.display = 'block';
+    form.reset();
+  } catch (error) {
+    console.error('Error!', error);
+    successBox.textContent = 'Something went wrong. Please try again.';
+    successBox.style.display = 'block';
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = 'Send interest ↗';
+    successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+});
+</script>
+</script>
+</body></html>
